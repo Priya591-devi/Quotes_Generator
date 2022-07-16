@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
 
 #root,
 html,
@@ -17,7 +18,7 @@ body {
 .app {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./images/bg.jpg");
+    url("./images/quotes_bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,8 +28,10 @@ body {
 
 .app .card {
   /* padding: 1rem; */
-  font-family: "League Spartan", sans-serif;
-  background-color: whitesmoke;
+  font-family: 'Edu NSW ACT Foundation', cursive; 
+  backdrop-filter: blur(5px);
+  /* opacity: 0.7px; */
+  background-color:rgba(255,255,255,0.5);
   width: 40%;
   height: 30%;
   flex-direction: column;
@@ -41,14 +44,15 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   flex-wrap: nowrap;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .app .card .button {
-  font-family: "League Spartan", sans-serif;
+  /* font-family: "League Spartan", sans-serif; */
+  font-family: 'Edu NSW ACT Foundation', cursive;
   border-radius: 20px;
   outline: none;
-  border: 0.5px solid royalblue;
+  border: 0.5px solid #146f63;
   padding: 10px 20px;
   background: #fff;
   margin-bottom: 2rem;
@@ -58,14 +62,14 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .app .card .button span {
-  color: #164ca7;
-  font-size: 12px;
+  color: #146f63;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.7px;
 }
 
 .app .card .button:hover {
-  background-color: #164ca7;
+  background-color: #37cea5;
   animation: rotate 0.7s ease-in-out both;
 }
 .app .card .button:hover span {
